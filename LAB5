@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab#5 聖誕樹</title>
+</head>
+<body>
+    <script>
+        function drawTree(height) {
+            for (let i = 0; i < height; i++) {
+                let spaces = ' '.repeat(height - i - 1);
+                let stars = '*'.repeat(2 * i + 1);
+                console.log(spaces + stars);
+            }
+            
+            let trunk = ' '.repeat(height - 1) + '*';
+            console.log(trunk);
+            console.log(trunk);
+        }
+
+        drawTree(5); 
+    </script>
+</body>
+</html>
